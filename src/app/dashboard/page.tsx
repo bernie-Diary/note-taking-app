@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 
 import React from "react";
+import CreateNoteDialog from "@/components/CreateNoteDialog";
 
 type Props = {};
 
@@ -33,6 +34,10 @@ const Dashboard = (props: Props) => {
 
           <div className="text-center">
                 <h2 className="text-xl text-gray-500">You have no notes yet.</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-3 md:grid-cols-5 grid-cols-1 gap-4 ">
+            <CreateNoteDialog/>
           </div>
         </div>
       </div>
